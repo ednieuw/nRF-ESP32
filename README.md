@@ -2,7 +2,6 @@
 Use BLE on mobile to control the ESP32 
 
 <h1 class="auto-style1">Bluetooth BLE with Nordic nRF chipsets&nbsp; </h1>
-<p class="auto-style1">&lt;-- <a href="../index.html">Home</a> </p>
 <p class="auto-style1">Strings of data can be transferred between
 computers by wire or by air. <br />
 Serial communication is an long proven solid method 
