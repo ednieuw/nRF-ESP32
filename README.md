@@ -261,7 +261,7 @@ void ReworkInputString(String InputString)
              InputString.substring(1).toCharArray(Mem.Ssid,InputString.length()-1);
              sprintf(sptext,"SSID set: %s", Mem.Ssid);  
             }
-            else sprintf(sptext,"**** Length fault. Use between 4 and 30 characters ****");
+            else sprintf(sptext,"Length fault. Use between 4 and 30 characters");
             break;
     case 'B':
     case 'b': 
@@ -270,7 +270,7 @@ void ReworkInputString(String InputString)
              InputString.substring(1).toCharArray(Mem.Password,InputString.length()-1);
              sprintf(sptext,"Password set: %s\n Enter @ to reset ESP32 and connect to WIFI and NTP", Mem.Password); 
             }
-            else sprintf(sptext,"%s,**** Length fault. Use between 4 and 40 characters ****",Mem.Password);
+            else sprintf(sptext,"%s," Length fault. Use between 4 and 40 characters ",Mem.Password);
             break;   
     case 'C':
     case 'c': 
@@ -279,7 +279,7 @@ void ReworkInputString(String InputString)
              InputString.substring(1).toCharArray(Mem.BLEbroadcastName,InputString.length()-1);
              sprintf(sptext,"BLE broadcast name set: %s", Mem.BLEbroadcastName); 
             }
-            else sprintf(sptext,"**** Length fault. Use between 4 and 30 characters ****");
+            else sprintf(sptext,"Length fault. Use between 4 and 30 characters");
             break;
     case 'I':
     case 'i': 
@@ -292,7 +292,7 @@ void ReworkInputString(String InputString)
                 Reset();
                 sprintf(sptext,"\nReset to default values: Done");
                }                                
-             else sprintf(sptext,"**** Length fault. Enter R ****");
+             else sprintf(sptext,"Length fault. Enter R");
              break;      
  
     default: break;
