@@ -2,47 +2,14 @@
 Use BLE on mobile to control the ESP32 
 
 <h1 class="auto-style1">Bluetooth BLE with Nordic nRF chipsets&nbsp; </h1>
-<p class="auto-style1">Strings of data can be transferred between
-computers by wire or by air. <br />
-Serial communication is an long proven solid method 
-to send small amounts of data, like instructions or records from measurement on 
-a remote device.<br />
-An universal asynchronous 
-receiver-transmitter&nbsp;(UART) is a&nbsp;computer hardware&nbsp;device for&nbsp;<a href="https://en.wikipedia.org/wiki/Asynchronous_serial_communication">asynchronous 
-serial communication</a>&nbsp;in which the data format and transmission speeds are 
-configurable as Wikipedia describes it.</p>
-<p class="auto-style1">The serial port on a PC can be connected by wire to an 
-other PC's serial port. <br />
-If from both wires the TX (transmit) pin from one PC is connected 
-to the RX (receive) pin of the other PC, the PC's can communicate. <br />
-Both PC's must be set to the same transmission speed, the baud rate. The baud 
-rate is how many bits per second are send over the wires.
-</p>
-<p class="auto-style1">A standard communication speed is 9600 baud = 9600 bits 
-per second. In this string of bits 
-some are control bits. 9600 baud is roughly 1000 bytes per second. <br />
-A baud rate of 
-115200 is also a common used speed.</p>
-<p class="auto-style1">There are several methods that can be used to send 
-data through the air.<br />
-ESP32 and some Arduino MCU's use the Nordic nRF52 chipsets. They are often 
-integrated in the processor boards together with an WIFI module.<br />
-<br />
+
 Bluetooth has a range of 10 meters and can be transmitted and received with a 
 mobile phone. <br />
-There are similar serial radio modules, known as HC-12, that has ranges up to 1000 
-meter. (<a href="../Woordklok/DCFNanoEvery/DCFHC12Transmitter.html">See an 
-example here</a>) <br />
-Two HC-12 modules can be used instead of a long cable between two devices. They 
-are easy to operate but you can not use a phone.&nbsp; <br />
-A HM-10 or similar BLE module, like JDY-23, can be used with Android and Apple 
-phones. HC-0x modules, like the popular HC-05, can not be used with Apple 
-devices. Therefore HM-10 modules are a good choice.</p>
 <p class="auto-style1">This page describes how to use a phone to communicate 
 with an ESP32 program to send instructions and receive results.</p>
 <p class="auto-style1"><span class="auto-style3"><strong>The menu to display in the terminal</strong></span> </p>
 <p class="auto-style1">
-<img alt="nRF52 menu" height="450" src="Pics/nrfmenu.png" /></p>
+<img alt="nRF52 menu" height="450" src="nRF52Menu\nrfmenu.png" /></p>
 <p class="auto-style1">
 The menu is a character array with text to be displayed.<br />
 In this example a menu line can not be longer than 40 characters.</p>
@@ -141,9 +108,9 @@ ESP32 variants use the <a href="https://apps.apple.com/nl/app/bleserial-nrf/id16
 has more capabilities and connect to both CC25xx and nRF chipsets.<br />
 <br />
 </span>&nbsp;<span class="auto-style1"><br />
-</span>&nbsp;<span class="auto-style1"><a href="https://apps.apple.com/nl/app/bleserial-nrf/id1632235163"><img alt="BLEserial in app store" class="auto-style4" height="632" src="Pics/NrfApp.png" /></a>&nbsp;&nbsp;&nbsp;
+</span>&nbsp;<span class="auto-style1"><a href="https://apps.apple.com/nl/app/bleserial-nrf/id1632235163"><img alt="BLEserial in app store" class="auto-style4" height="632" src="nRF52Menu\NrfApp.png" /></a>&nbsp;&nbsp;&nbsp;
 <a href="Pics/terminalIOS.PNG">
-<img alt="Terminal windows" class="auto-style4" height="632" src="Pics/terminalIOS.PNG" width="400" /></a><br />
+<img alt="Terminal windows" class="auto-style4" height="632" src="nRF52Menu\terminalIOS.PNG" width="400" /></a><br />
 </span>&nbsp;<span class="auto-style1"><br />
 <br />
 </span>
